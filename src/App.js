@@ -12,11 +12,14 @@ const App = () => {
     <>
       <CssBaseline />
       <Header />
-      {/* since we're doing an inline style, it'll be an object! So that's why it needs to be inside curly braces!!!!! */}
       <Grid container spacing={3} style={{ width: "100%" }}>
-        <Grid item xs={12} md={4}></Grid>
+        <Grid item xs={12} md={4}>
+          <List />
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <Map />
+        </Grid>
       </Grid>
-      {/* First Grid is of type container while the second is of type item */}
     </>
   );
 };
